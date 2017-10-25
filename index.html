@@ -12,11 +12,13 @@
 <body>
 
 	<header class="header">
-		
-			<div class="navbar navbar_opened container">
-				<img src="img/logo.png" alt="Logo" class="logo">
-				<button class="navbar__toggle"></button>
+			<div class="navbar navbar_closed ">
+				<div class="header__logo">
+					<img src="img/logo.png" alt="Logo" class="logo">
+				</div>
+				
 				<ul class="navbar__items animated bounceInLeft">
+					<button class="navbar__toggle"></button>
 					<li class="navbar__item navbar__item_active"><a href="#">главная</a></li>
 					<li class="navbar__item"><a href="#">Портфолио</a></li>
 					<li class="navbar__item"><a href="#">о нас</a></li>
@@ -33,6 +35,7 @@
 				<input type="button" class="btn animated bounceInDown" value="оставить заявку">
 				<input type="button" class="btn animated bounceInDown" value="наши работы">
 			</div>
+
 	</header>
 	<article class="bg">
 		<H1 class="gallery_name container">Наши работы</H1>
@@ -134,14 +137,15 @@
 		<script>
 		var navmain = document.querySelector ('.navbar');
 		var navtoggle = document.querySelector ('.navbar__toggle');
-		navmain.classList.remove('navbar_nojs');
+		
 		navtoggle.addEventListener('click', function() {
 			if (navmain.classList.contains('navbar_closed')) {
 				navmain.classList.remove('navbar_closed');
 				navmain.classList.add('navbar_opened');
 			} else {
-				navmain.classList.add('navbar_closed');
 				navmain.classList.remove('navbar_opened');
+				navmain.classList.add('navbar_closed');
+				
 			}
 		});
 
