@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,13 +14,13 @@
 		
 			<div class="navbar container">
 				<img src="img/logo.png" alt="Logo" class="logo">
-				<ul class="navbar_items animated bounceInLeft">
-					<li class="item"><a href="#">главная</a></li>
-					<li class="item"><a href="#">Портфолио</a></li>
-					<li class="item"><a href="#">о нас</a></li>
-					<li class="item"><a href="#">цены</a></li> 
-					<li class="item"><a href="#">преимущества</a></li>
-					<li class="item"><a href="#">контакты</a></li>
+				<ul class="navbar__items animated bounceInLeft">
+					<li class="navbar__item"><a href="#">главная</a></li>
+					<li class="navbar__item"><a href="#">Портфолио</a></li>
+					<li class="navbar__item"><a href="#">о нас</a></li>
+					<li class="navbar__item"><a href="#">цены</a></li> 
+					<li class="navbar__item"><a href="#">преимущества</a></li>
+					<li class="navbar__item"><a href="#">контакты</a></li>
 				</ul> 
 			</div>
 			<div class="container">
@@ -36,7 +36,9 @@
 		<H1 class="gallery_name container">Наши работы</H1>
 		<section class="gallery container">
 
-					<div class="gallery_item"><img src="img/avenue.jpg" width="100%" height="250"></div>
+					<div class="gallery_item">
+						<a href="https://den3240.github.io/santehniki/"><img src="img/samstroy.png" width="100%" height="250"></a>
+					</div>
 					<div class="gallery_item"><img src="img/aviator.jpg" width="100%" height="250"></div>
 					<div class="gallery_item"><img src="img/dovetail.jpg" width="100%" height="250"></div>
 					<div class="gallery_item"><img src="img/forte.jpg" width="100%" height="250"></div>
@@ -47,7 +49,7 @@
 		</section>
 	</article>
 	<section class="about">
-		<h1 class="container gallery_name">О нас</h1>
+		<h1 class="container about__title">О нас</h1>
 		<p class="container">Web студия «XXX» — это команда  с большим  опытом работы в сфере веб–разработки, что позволяет назвать себя профессионалами в интернет индустрии. Наша работа  - это создание  сайтов любой сложности, которые являются эффективными маркетинговыми инструментами для наших клиентов.</p>
 		<p class="container">
 			Мы знаем, как воплотить ваши идеи в реальность
